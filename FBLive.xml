@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+  <BOT>61681</BOT>
+  <layer>
+  </layer>
+  <vendor>Sportzcast SBDATA</vendor>
+  <sport>Football</sport>
+  <clock> 3:27</clock>
+  <clockmin> 3</clockmin>
+  <clocksec>27</clocksec>
+  <playclock>
+  </playclock>
+  <clockstatus>Running</clockstatus>
+  <clockmode>:</clockmode>
+  <playclockstatus>
+  </playclockstatus>
+  <horn>
+  </horn>
+  <Hscore> 0</Hscore>
+  <Vscore> 0</Vscore>
+  <possession>
+  </possession>
+  <Hpos>
+  </Hpos>
+  <Vpos>
+  </Vpos>
+  <Htimeouts>
+  </Htimeouts>
+  <Vtimeouts>
+  </Vtimeouts>
+  <HTOGraphic>
+  </HTOGraphic>
+  <VTOGraphic>
+  </VTOGraphic>
+  <down>
+  </down>
+  <downtext>
+  </downtext>
+  <togo>
+  </togo>
+  <ballon>
+  </ballon>
+  <downdist> and 0</downdist>
+  <quarter>1</quarter>
+  <qtrtext>1st</qtrtext>
+  <flag>
+  </flag>
+  <Hteam><![CDATA[Home    ]]></Hteam>
+  <Vteam><![CDATA[Visitor ]]></Vteam>
+  <Hyardsrushing>0</Hyardsrushing>
+  <Hyardspassing>0</Hyardspassing>
+  <Htotalyards>0</Htotalyards>
+  <Hfirstdowns>0</Hfirstdowns>
+  <Vyardsrushing>0</Vyardsrushing>
+  <Vyardspassing>0</Vyardspassing>
+  <Vtotalyards>0</Vtotalyards>
+  <Vfirstdowns>0</Vfirstdowns>
+  <HScore1stQtr>0</HScore1stQtr>
+  <HScore2ndQtr>0</HScore2ndQtr>
+  <HScore3rdQtr>0</HScore3rdQtr>
+  <HScore4thQtr>0</HScore4thQtr>
+  <VScore1stQtr>0</VScore1stQtr>
+  <VScore2ndQtr>0</VScore2ndQtr>
+  <VScore3rdQtr>0</VScore3rdQtr>
+  <VScore4thQtr>0</VScore4thQtr>
+  <cmd>
+  </cmd>
+  <cmddata>
+  </cmddata>
+  <hexbot>00F0F1</hexbot>
+  <timestamp>2024-02-21 22:56:33.570</timestamp>
+</info>

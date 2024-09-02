@@ -1,0 +1,15 @@
+Install Python:
+	- Go to  (https://www.python.org/downloads/)
+	- Open CMD and navigate to Downloads direcoty via cd
+	- Install w/ "name-of-installer.exe
+
+Create Virtual Env:
+	- Open CMD
+	- cd to project directory
+	- python -m venv bugenv
+	- venv\Scripts\activate
+	- pip install -r requirements.txt
+
+
+
+

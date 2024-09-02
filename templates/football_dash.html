@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Dash</title>
+    <style>
+        /* Dark theme styling */
+        body {
+            background-color: #222;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .title {
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .section-header {
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .button {
+            background-color: #555;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+        .button.active {
+            background-color: #999;
+        }
+        .yellow {
+            background-color: #ffd700;
+        }
+        .red {
+            background-color: #ff0000;
+        }
+        .blue {
+            background-color: #0074D9;
+        }
+        .orange {
+            background-color: #FFA500;
+        }
+        .black {
+            background-color: #000;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="title">FOOTBALL DASHBOARD</div>
+        <div class="section">
+            <div class="section-header">POSSESSION</div>
+            <div class="button-container">
+                <form method="post">
+                    <button type="submit" class="button {% if possession == 2 %}active{% endif %} orange" name="possession" value="2">Away</button>
+                </form>
+                <form method="post">
+                    <button type="submit" class="button {% if possession == 1 %}active{% endif %} blue" name="possession" value="1">Home</button>
+                </form>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">UTILITIES</div>
+            <div class="button-container">
+                <form method="post">
+                    <button type="submit" class="button {% if flag == 1 %}active{% endif %} yellow" name="flag" value="{{ 1-flag }}">Flag</button>
+                </form>
+                <form method="post">
+                    <button type="submit" class="button {% if first == 1 %}active{% endif %} black" name="first" value="{{ 1-first}}">1ST DOWN</button>
+                </form>
+                <form method="post">
+                    <button type="submit" class="button {% if redzone == 1 %}active{% endif %} red" name="redzone" value="{{ 1-redzone }}">Red Zone</button>
+                </form>
+                <form method="post">
+                    <button type="submit" class="button {% if title == 1 %}active{% endif %} black" name="title" value="{{ 1-title }}">TITLE</button>
+                </form>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">TOUCHDOWNS</div>
+            <div class="button-container">
+                <form method="post">
+                    <button type="submit" class="button orange" name="awayTouchdown" value="1">Away Team</button>
+                </form>
+                <form method="post">
+                    <button type="submit" class="button blue" name="homeTouchdown" value="1">Home Team</button>
+                </form>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-header">TIMEOUTS</div>
+            <div class="button-container">
+                <form method="post">
+                    <button type="submit" class="button" name="VtimeoutUp" value="1">Visitors +</button>
+                    <button class="button">{{ Vtimeouts }}</button>
+                    <button type="submit" class="button" name="VtimeoutDown" value="1">Visitors -</button>
+                </form>
+                <form method="post">
+                    <button type="submit" class="button" name="HtimeoutUp" value="1">Home +</button>
+                    <button class="button">{{ Htimeouts }}</button>
+                    <button type="submit" class="button" name="HtimeoutDown" value="1">Home -</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
